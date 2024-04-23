@@ -14,7 +14,7 @@ let CounterObserver = new IntersectionObserver(
         const targetNumber = +counter.dataset.target;
         const initialNumber = +counter.innerText;
         const incPerCount = targetNumber / speed;
-      
+        
         if (initialNumber < targetNumber) {
           counter.innerText = Math.ceil(initialNumber + incPerCount);
           setTimeout(UpdateCounter, 50);
