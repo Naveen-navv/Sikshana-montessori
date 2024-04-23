@@ -8,7 +8,7 @@ let CounterObserver = new IntersectionObserver(
     let [entry] = entries;
     if (!entry.isIntersecting) return;
 
-    let speed = targetNumber / 2;
+    let speed = 200;
     counters.forEach((counter, index) => {
       function UpdateCounter() {
         const targetNumber = +counter.dataset.target;
